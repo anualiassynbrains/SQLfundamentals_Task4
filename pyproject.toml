@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sqlfundamental"
+version = "0.1.0"
+description = "performs basic sql operations and integrates to python"
+authors = ["anualiassynbrains <anu.alias@synbrains.ai>"]
+readme = "README.md"
+packages = [{include = "sqlfundamental", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9.2,<4.0"
+pandas = "^2.3.0"
+sqlalchemy = "^2.0.41"
+python-dotenv = "^1.1.0"
+psycopg2-binary = "^2.9.10"
+mysqlclient = "^2.2.7"
+pyodbc = "^5.2.0"
+pymysql = "^1.1.1"
+cryptography = "^45.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
